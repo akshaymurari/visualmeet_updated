@@ -1,0 +1,31 @@
+.linkCard{
+    border-radius: 5%;
+    width: 20rem;
+    border: 2px black solid;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+    &:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.95);
+    }
+    /*@media screen and (max-width: 1000px){
+        width: 40%;
+    }
+    @media screen and (max-width: 620px) {
+        width: 80%;
+    } */
+    position: relative;
+    background: rgb(175,236,190);
+    background: linear-gradient(142deg,
+                                rgba(175,236,190,1) 0%,
+                                rgba(238,235,235,1) 32%, 
+                                rgba(238,238,238,1) 100%);
+    word-wrap: break-word
+}
+
+.linkDeleteButton{
+    position: absolute !important;
+    bottom: 1rem;
+    right: 1rem;
+}

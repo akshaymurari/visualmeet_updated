@@ -1,0 +1,15 @@
+.pageTwo{
+    min-height: 100vh;
+    background-color: #eaf2ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    @media screen and (max-width: 830px){
+        flex-direction: column;
+        justify-content: center;
+    }
+}
+
+.link1{
+    text-decoration: none !important;
+}

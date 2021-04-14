@@ -1,0 +1,63 @@
+#welcome{
+    overflow: hidden;
+}
+
+.display{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75vh;
+    padding-top: 7rem;
+    background-color: #eaf2ef;
+    @media screen and (max-width: 830px){
+        flex-direction: column;
+        margin-left: auto;
+        padding: auto;
+    }
+}
+
+.icon{
+    width: 20rem;
+    height: 20rem;
+}
+
+.title{
+    font-family: 'Libre Baskerville', serif;
+    animation: downAnimate 1s;
+}
+
+.tag{
+    font-family: 'Yeon Sung', cursive;
+    font-size: 1.3rem;
+    display: block;
+    // margin-left: 7rem;
+    animation: upAnimate 1s;
+}
+
+.arrow{
+    display: flex;
+    justify-content: center;
+    background-color: #eaf2ef;
+    height: 35vh;
+}
+
+@keyframes downAnimate{
+    0%{
+        transform: translate(0,50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}
+@keyframes upAnimate{
+    0%{
+        transform: translate(0,-50px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0, 0);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@900&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
+
+.dashboardEventHeading{
+    font-family: 'Sniglet', cursive;
+    color: black;
+    font-size: 4rem;
+    display: block;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.loader-spinner{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	// background:#d4e8ca;
+	z-index:9999;
+}
+
+.dashboardEvent{
+    z-index: -1;
+    border: black 4px solid;
+    box-sizing: border-box;
+    font-size: 2rem;
+    width: 70%;
+    min-width: 450px;
+    @media screen and (max-width:770px){
+        width: 100%;
+    }
+    .dashboardEventHeader{
+        font-family: 'Roboto Slab', serif;
+        display: flex;
+    }
+
+    .day{
+        z-index: -1;
+        position: relative;
+        width: calc(100% / 7);
+        height: 60px;
+        display: inline-block;
+        background-color: #b9f0aa;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        z-index: 1;
+        text-align: center;
+        border: rgba(83, 79, 79, 0.4) 1px solid;
+        &:hover{
+            background-color: #acee99;
+            border: rgba(83, 79, 79, 0.8) 1px solid;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+        .today{
+            height: 58px;
+            background-color: #a1ec8d;
+        }
+        .selected{
+            box-sizing: border-box;
+            border: black 1px solid;
+            height: 60px;
+            cursor: pointer;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+        }
+        .beforeMonth{
+            height: 58px;
+            color:rgb(168, 168, 168);
+        }
+    }
+    .dayNames{
+        min-width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        max-width: 1000px;
+        margin: 0 auto;
+        align-items: stretch;
+    }
+    .eachDayNmae{
+        margin: auto 0;
+        position: relative;
+        flex: 1;
+        width: calc(100% / 7);
+        height: 60px;
+        display: inline-block;
+        background-color: #238009;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+        z-index: 1;
+        text-align: center;
+        text-transform: uppercase;
+        color: var(--black);
+        font-weight: 400;
+        border: rgba(0, 0, 0, 0.4) 1px solid;
+    }
+}
+
+.dashboardEventBackDrop{
+    z-index: 100;
+    background-color: rgba(26, 25, 25, 0.719);
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    transform-origin: all 1.3s;
+}
+
+.dashboardAddEventAreaForm{
+    width: inherit;
+    position: absolute;
+    margin: auto !important;
+}

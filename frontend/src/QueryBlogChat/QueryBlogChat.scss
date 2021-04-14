@@ -1,0 +1,159 @@
+@import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
+
+.queryBlogChatScreen{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Sniglet', cursive;
+    background: rgb(249,255,0);
+    background: linear-gradient(142deg, rgba(249,255,0,1) 0%, rgba(245,255,0,1) 0%, rgba(11,205,0,1) 100%);
+}
+
+.queryBlogChatArea{
+    max-width: 1500px;
+    min-width: 300px;
+    width: 80%;
+    max-height: 600px;
+    height: 95vh;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+}
+
+.queryBlogChatAreaLeftPane{
+    height: 100%;
+    border-radius: 10px 0 0 10px;
+    position: relative;
+    @media screen and (max-width: 767px){
+        display:none;
+    }
+    .queryBlogChatTitle{
+        text-align: center;
+    }
+}
+
+.queryBlogChatAreaRightPane{
+    height: 100%;   
+    border-radius: 0 10px 10px 0;
+    @media screen and (max-width: 767px){
+        border-radius: 10px;
+    }
+}
+
+.queryBlogChatMessagesArea{
+    background-color: #edffea;
+    height: 86%;
+    border-radius: 0 10px 0 0;
+    @media screen and (max-width: 767px){
+        border-radius: 10px 10px 0 0;
+    }
+    .queryBlogChatHeader{
+        border-radius: 0 10px 0 0;
+        background-color: #28df99;
+        height: 10%;
+        text-align: center;
+        @media screen and (max-width: 767px){
+            border-radius: 10px 10px 0 0;
+        }
+        .queryBlogChatHeaderHeading{
+            display: block;
+            margin: auto 0;
+            font-size: 1.5rem;
+            color: ivory;
+        }
+    }
+    .queryBlogChats{
+        height: 90%;
+        line-height: 1;
+        display: flex;
+        flex-direction: column-reverse;
+        overflow: auto;
+        overflow-y: scroll;
+        .me{
+            margin-left: auto;
+            word-wrap: break-word;
+            // max-width: 75%;
+            min-width: 100px;
+            max-width: 75%;      
+            width: max-content;    
+            padding: 5px;
+            font-size: 1.2rem;
+            border-radius: 8px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            background-color: #80ffdb !important;
+            border: rgba(0, 0, 0, 0.3) 0.5px solid;
+            .queryBlogChatMessageName{
+                font-size: 0.9rem;
+                font-weight: 900;
+            }
+        }
+        .student{
+            border: rgba(0, 0, 0, 0.3) 0.5px solid;
+            margin-left: 10px;
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            min-width: 100px;
+            max-width: 75%;      
+            background-color: #cffffe;
+            width: max-content;
+            border-radius: 8px;
+            padding: 5px;
+            .queryBlogChatMessageName{
+                border-top: 4px;
+                font-size: 0.9rem;
+                font-weight: 900;
+            }
+        }
+    }
+    .queryBlogChats::-webkit-scrollbar-track{
+        background-color: #e2e2e2;
+    }
+
+    .queryBlogChats::-webkit-scrollbar{
+        width: 6px;
+        background-color: #F5F5F5;
+    }
+
+    .queryBlogChats::-webkit-scrollbar-thumb{
+        border-radius: 100px;
+        background-color: #545454;
+    }
+}
+
+.queryBlogChatNewMessageArea{
+    z-index: 1;
+    background-color: #89f8ce;
+    height: 14%;
+    border-radius: 0 0 10px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    @media screen and (max-width: 767px){
+        border-radius: 0 0 10px 10px;
+    }
+}
+
+#cin{
+    padding: 4px;
+    border-radius: 10px;
+    resize: none;
+	overflow: auto;
+	overflow-x: hidden;
+}
+
+#cin::-webkit-scrollbar-track{
+	background-color: #e2e2e2;
+}
+
+#cin::-webkit-scrollbar{
+	width: 6px;
+	background-color: #F5F5F5;
+}
+
+#cin::-webkit-scrollbar-thumb{
+	border-radius: 100px;
+	background-color: #545454;
+}

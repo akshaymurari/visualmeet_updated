@@ -1,0 +1,14 @@
+.dashboard{
+    min-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    padding: 0 !important;
+    padding-top: 4rem !important;
+    .col{
+        padding: 0;
+    }
+}
+
+.DashboardMenuParentDiv{
+    z-index: 100;
+}

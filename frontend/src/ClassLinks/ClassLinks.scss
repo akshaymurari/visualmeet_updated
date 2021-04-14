@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+body{
+    background-color: #eaf2ef !important;
+}
+
+.linkBackground{
+    position:fixed;
+    background-color: #eaf2ef;
+    min-height: 100vh;
+    padding-top: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkHeading{
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 4rem;
+    color: #000000
+}
+
+.linksArea{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: stretch;
+    flex-flow: wrap;
+    margin: 0rem;
+}

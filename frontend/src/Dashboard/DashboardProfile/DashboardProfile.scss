@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+@import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
+
+.dashboardProfile{
+    width: 100%;
+    position: relative;
+    display: block;
+}
+
+.dashboardProfileBackground{
+    width: 100%;
+    height: fit-content;
+    background-color: #7bf159;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    display: block;
+    @media screen and(max-width: "633px"){
+        height: 374px;
+    }
+    @media screen and(max-width: "370px"){
+        height: 440px;
+    }
+    margin-bottom: 7rem;
+    z-index: -100 !important;
+}
+
+.dashboardProfileHeader{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    @media screen and (max-width: "632px"){
+        flex-direction: column-reverse;
+    }
+}
+
+.dashboardProfileUserProfilePic{
+    width: 11rem;
+    height: 10rem;
+    position: relative;
+    margin-bottom: 1rem;
+}
+
+.dashboardProfileUserProfileName{
+    font-family: 'Sniglet', cursive;
+    padding: 0;
+    height: fit-content;
+    color: white;
+    font-size: 3rem;
+    align-self: flex-end;
+    margin-bottom: 1rem !important;
+    margin-left: 4rem;
+    @media screen and (max-width: "632px"){
+        margin: 0 auto;
+    }
+}
+
+
+.dashboardProfileHeading{
+    font-family: 'Sniglet', cursive;
+    font-weight: 900;
+    color: white;
+    font-size: 5rem;
+}
+
+.dashboardProfileAttributes{
+    font-size: 2.3rem;
+    display: inline-block !important;
+    max-width: 90% !important;
+    align-self: start;
+    @media screen and (max-width: 620px){
+        right:0rem;
+    }
+}
+
+.dashboardProfileValues{
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8rem;
+    max-width: 90% !important;
+    text-decoration: underline;
+    word-wrap: break-word;
+    align-self: center;
+}

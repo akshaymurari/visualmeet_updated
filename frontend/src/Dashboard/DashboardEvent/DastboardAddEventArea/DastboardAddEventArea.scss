@@ -1,0 +1,34 @@
+@import url(https://fonts.googleapis.com/css?family=Sniglet|Raleway:900);
+
+.dashBoardAddEventToCalander{
+    z-index: 200;
+    display: inline-block;
+    position: absolute;
+    font-size: 1.5rem;
+    font-family: 'Sniglet', cursive;
+    transition: all 1.3s all;
+    label{
+        color: rgb(43, 255, 89);
+        font-size: 1.5em;
+    	margin-top: 20px;
+    	padding-left: 20px;
+    }
+}
+
+.dashBoardAddEventToCalanderInput{
+    width: 100%;	
+	border: none;
+	border-radius: 20px;
+	outline: none;
+	padding: 10px;
+	font-family: 'Sniglet', cursive;
+	font-size: 1em;
+    color: #020202;
+    resize: none;
+	transition: border 0.5s;
+	border: solid 3px #a1ec8d;
+    box-sizing:border-box;
+    &:focus{
+        border: solid 4px #a1ec8d;
+    }
+}

@@ -1,0 +1,18 @@
+.BottomPagination{
+    // bottom:1rem;
+    .MuiPagination-root{
+        .MuiPagination-ul{
+            justify-content: center !important;
+            margin-bottom:1rem;
+        }
+    }
+}
+
+.QueryQuestionsHover:hover{
+    transform:translateY(-5%);
+}
+
+.QueryPostEditor{
+    transform:translateY(50%);
+    max-width:max-content !important;
+}

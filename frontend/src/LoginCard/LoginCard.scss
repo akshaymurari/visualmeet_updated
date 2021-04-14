@@ -1,0 +1,35 @@
+.logincard{
+    max-height: 28rem;
+    
+    margin-right: 2.5rem;
+    margin-left: 2.5rem;
+    @media screen and (max-width: 830px){
+        margin: auto;
+        margin-bottom: 1rem;
+    }
+    &:hover{
+        box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22) !important;
+    }
+}
+
+.mag_img{
+    overflow: hidden;
+    img{
+        transition: all 1.5s ease;
+    }
+    &:hover img{
+        transform: scale(1.5);
+    }
+}
+
+.role{
+    font-family: "Patua One";
+    font-size: 2rem;
+    color: #fff;
+}
+
+.desc{
+    font-family: "Patua One";
+    font-size: 1.1rem;
+    color: #ddd;
+}

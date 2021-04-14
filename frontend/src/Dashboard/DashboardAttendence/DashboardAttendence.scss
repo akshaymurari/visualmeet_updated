@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Coda+Caption:wght@800&display=swap');
+
+.dashboardAttendanceHeader{
+    font-family: 'Coda Caption', sans-serif;
+    font-size: 4rem;
+    @media screen and (max-width: "500px"){
+        font-size: 2rem;
+    }
+    padding: 3rem;
+    margin-bottom: 3rem !important;
+    background-color: #8cf35c;
+    color: white;
+}
+
+$separator-size: 5px;
+$separator-border-style: solid;
+$separator-border-color: #08f52f;
+$separator-space-top: 25px;
+$separator-space-bottom: 80px;
+
+
+@mixin dot {
+  $dot-size: 10px;
+  content: "";
+  background-color: $separator-border-color;
+  display: block;
+  height: $dot-size;
+  width: $dot-size;
+  border-radius: 50%;
+}
+.separator--dots {
+  border: 0;
+  @include dot();
+  color: $separator-border-color;
+  position: relative;
+  height: 10px !important;
+  width: 10px !important;
+  margin: auto;
+  margin-bottom: 2rem !important;
+  &:before {
+     @include dot();
+     position: absolute;
+     left: -32px;
+     animation: dot-move-left 1s ease-out forwards;
+  }
+    &:after {
+     @include dot();
+     position: absolute;
+     left: 32px;
+     animation: dot-move-right 1s ease-out forwards;
+  }
+}
+
+@keyframes dot-move-right {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: 32px;
+  }
+}
+@keyframes dot-move-left {
+  0% {
+    left: 0;
+  }
+  100% {
+    left: -32px;
+  }
+}

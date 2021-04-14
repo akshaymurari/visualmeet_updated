@@ -1,0 +1,18 @@
+*{
+    outline:none !important;
+}
+body{
+    background:#d7dff7 !important;
+}
+// .container-fluid{
+//     // margin-top: 2.3rem;
+//     background-color: #d7dff7;
+// }
+.loader-spinner1{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+	// background:#d4e8ca;
+	z-index:9999;
+}

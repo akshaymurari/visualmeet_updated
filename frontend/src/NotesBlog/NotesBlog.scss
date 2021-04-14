@@ -1,0 +1,28 @@
+#circleicon{
+    width:min-content !important;
+    margin-bottom: -2rem;
+    margin-left:100%;
+    transform:translateX(-50%);
+    background:#3f50b5;
+    border-radius: 9rem;
+    #addcircle{
+        font-size:3rem;
+        color:#fff
+    }
+}
+.notesblog{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content:space-evenly;
+}
+@media (max-width:581px){
+    #circleicon{
+        transform:translateX(-100%);
+    }
+}
+.boxx:hover{
+    box-shadow:  0rem 0rem 1.5rem 0rem #5f60fb !important;
+}
+.Notee:hover{
+    box-shadow:  0rem 0rem 1.5rem 0rem #5f60fb !important;
+}

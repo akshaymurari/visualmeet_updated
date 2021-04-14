@@ -1,0 +1,7 @@
+npm i @material-ui/icons @material-ui/core bootstrap react-router-dom --save-dev sass redux react-redux redux-logger redux-thunk --save redux-devtools-extension jquery react-router 
+npm i redux react-redux redux-thunk redux-logger redux-devtools-extension
+npm install @material-ui/data-grid
+npm i --save draft-js react react-dom
+npm i draftjs-to-html
+npm i @material-ui/lab
+npm install --save react-useinterval

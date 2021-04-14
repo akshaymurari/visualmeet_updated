@@ -1,0 +1,26 @@
+.dashboardMenu{
+    background-color: white;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    left: -100%;
+    transition: 1000ms;
+    z-index: 10 !important;
+    height: 100%;
+    position: fixed !important;
+    overflow-y: scroll;
+    width: 20vw;
+    @media screen and (max-width: "1000px"){
+        width: 40vw;
+    } 
+    @media screen and (max-width: "600px"){
+        width: 100vw;
+    } 
+}
+
+.dashboardMenuStyles{
+    left: 0!important;
+    transition: 500ms;
+}
+
+
